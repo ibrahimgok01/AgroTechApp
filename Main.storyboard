@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="agrotech_prot2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Sc-1xF">
+                                <rect key="frame" x="16" y="224" width="343" height="265"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-Eb-y8U">
+                                        <rect key="frame" x="13" y="50" width="317" height="207"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Görüntü Paneli" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-6H-F2J">
+                                        <rect key="frame" x="13" y="8" width="317" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="M3a-GX-WRc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="tfm-6H-F2J" firstAttribute="centerX" secondItem="4AZ-Sc-1xF" secondAttribute="centerX" id="D2q-Kw-x6w"/>
+                                    <constraint firstItem="tfm-6H-F2J" firstAttribute="trailing" secondItem="mRy-Eb-y8U" secondAttribute="trailing" id="GMg-gO-yMo"/>
+                                    <constraint firstItem="mRy-Eb-y8U" firstAttribute="top" secondItem="tfm-6H-F2J" secondAttribute="bottom" constant="8" id="gXU-ba-XoL"/>
+                                    <constraint firstItem="tfm-6H-F2J" firstAttribute="leading" secondItem="4AZ-Sc-1xF" secondAttribute="leading" constant="13" id="kxa-SK-KTe"/>
+                                    <constraint firstItem="tfm-6H-F2J" firstAttribute="top" secondItem="4AZ-Sc-1xF" secondAttribute="top" constant="8" id="m6a-l6-qef"/>
+                                    <constraint firstItem="tfm-6H-F2J" firstAttribute="leading" secondItem="mRy-Eb-y8U" secondAttribute="leading" id="w5O-xH-6rk"/>
+                                    <constraint firstItem="mRy-Eb-y8U" firstAttribute="bottom" secondItem="4AZ-Sc-1xF" secondAttribute="bottomMargin" id="z44-lx-eg2"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Teknofest_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gPQ-nL-6Wd">
+                                <rect key="frame" x="88" y="90" width="198" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="3bt-1v-piY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX3-V2-YDO">
+                                <rect key="frame" x="28" y="532" width="318" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="MNG-Hm-taj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Bağlant Kur"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9K-Db-3Tl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="İnsanlık Yararına Teknoloji Yarışması" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ9-rh-wdd">
+                                <rect key="frame" x="28" y="757" width="318" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zJ9-rh-wdd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0bB-8y-K7E"/>
+                            <constraint firstItem="AX3-V2-YDO" firstAttribute="trailing" secondItem="zJ9-rh-wdd" secondAttribute="trailing" id="2Hp-S7-VEF"/>
+                            <constraint firstAttribute="bottom" secondItem="AX3-V2-YDO" secondAttribute="bottom" constant="232" id="9co-fF-KYD"/>
+                            <constraint firstItem="gPQ-nL-6Wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="A1k-71-Nbz"/>
+                            <constraint firstItem="AX3-V2-YDO" firstAttribute="leading" secondItem="zJ9-rh-wdd" secondAttribute="leading" id="Gkn-Rm-6TH"/>
+                            <constraint firstItem="gPQ-nL-6Wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="QYx-OX-K5s"/>
+                            <constraint firstItem="AX3-V2-YDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="UdI-pQ-8af"/>
+                            <constraint firstItem="4AZ-Sc-1xF" firstAttribute="centerX" secondItem="AX3-V2-YDO" secondAttribute="centerX" id="aYG-Je-RCT"/>
+                            <constraint firstItem="4AZ-Sc-1xF" firstAttribute="top" secondItem="gPQ-nL-6Wd" secondAttribute="bottom" constant="33" id="fc5-qc-7w8"/>
+                            <constraint firstItem="4AZ-Sc-1xF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="frp-0X-Yy5"/>
+                            <constraint firstItem="AX3-V2-YDO" firstAttribute="top" secondItem="4AZ-Sc-1xF" secondAttribute="bottom" constant="43" id="k3Q-R6-6lC"/>
+                            <constraint firstItem="gPQ-nL-6Wd" firstAttribute="centerX" secondItem="4AZ-Sc-1xF" secondAttribute="centerX" id="mac-vX-Lke"/>
+                            <constraint firstItem="4AZ-Sc-1xF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="q4q-3l-Out"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonChar" destination="AX3-V2-YDO" id="Iay-1m-HMC"/>
+                        <outlet property="greyView" destination="4AZ-Sc-1xF" id="ASh-Us-ciA"/>
+                        <outlet property="imageView" destination="mRy-Eb-y8U" id="qGW-fD-Nat"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="-2.2167487684729066"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Teknofest_logo" width="301" height="225"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
